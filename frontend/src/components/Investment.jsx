@@ -214,7 +214,6 @@ const Investment = () => {
           ))}
           </div>
         )}
-        </div>
 
         {/* Investment Benefits */}
         <div className="bg-white rounded-2xl p-8 shadow-lg border border-blue-100">
