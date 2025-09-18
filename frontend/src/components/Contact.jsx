@@ -251,7 +251,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-blue-900">WhatsApp & Telefon</h4>
-                      <p className="text-gray-600">{companyInfo.contact.whatsapp}</p>
+                      <p className="text-gray-600">{companyInfo?.contact?.whatsapp || '+90 554 234 44 00'}</p>
                       <p className="text-sm text-green-600">7/24 WhatsApp desteği</p>
                     </div>
                   </div>
@@ -262,7 +262,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-blue-900">E-posta</h4>
-                      <p className="text-gray-600">{companyInfo.contact.email}</p>
+                      <p className="text-gray-600">{companyInfo?.contact?.email || 'info@goldencitizen.com.tr'}</p>
                       <p className="text-sm text-blue-600">24 saat içinde yanıt</p>
                     </div>
                   </div>
@@ -273,7 +273,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-blue-900">Ofis Lokasyonu</h4>
-                      <p className="text-gray-600">{companyInfo.contact.address}</p>
+                      <p className="text-gray-600">{companyInfo?.contact?.address || 'İzmir, Türkiye'}</p>
                       <p className="text-sm text-red-600">Randevu ile görüşme</p>
                     </div>
                   </div>
@@ -284,7 +284,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-blue-900">Çalışma Saatleri</h4>
-                      <p className="text-gray-600">{companyInfo.contact.officeHours}</p>
+                      <p className="text-gray-600">{companyInfo?.contact?.officeHours || 'Pazartesi - Cuma: 09:00 - 18:00'}</p>
                       <p className="text-sm text-amber-600">WhatsApp 7/24 aktif</p>
                     </div>
                   </div>
