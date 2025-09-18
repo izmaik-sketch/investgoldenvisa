@@ -7,6 +7,21 @@ const API = `${BACKEND_URL}/api`;
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [companyInfo, setCompanyInfo] = useState(null);
+
+  // Fetch company info from API
+  useEffect(() => {
+    const fetchCompanyInfo = async () => {
+      try {
+        const response = await axios.get(`${API}/company-info`);
+        setCompanyInfo(response.data);
+      } catch (err) {
+        console.error('Error fetching company info:', err);
+      }
+    };
+
+    fetchCompanyInfo();
+  }, []);
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Merhaba, Yunanistan Golden Visa hakkında bilgi almak istiyorum.");
