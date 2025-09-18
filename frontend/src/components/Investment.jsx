@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from './ui/card';
 import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { MapPin, Home, Bed, Bath, Eye, Heart, Euro, TrendingUp } from 'lucide-react';
-import { properties } from '../mock/mockData';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const Investment = () => {
   const [selectedProperty, setSelectedProperty] = useState(null);
