@@ -128,7 +128,7 @@ const Investment = () => {
                   
                   {/* Favorite Button */}
                   <button
-                    onClick={() => toggleFavorite(property.id)}
+                    onClick={() => toggleFavorite(property.id || property._id)}
                     className="absolute top-3 right-3 p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
                   >
                     <Heart 
