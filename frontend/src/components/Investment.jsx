@@ -111,7 +111,7 @@ const Investment = () => {
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {properties.map((property) => (
-            <Card key={property.id} className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border-0 shadow-lg">
+              <Card key={property.id || property._id} className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border-0 shadow-lg">
               <div className="relative">
                 {/* Image Placeholder */}
                 <div className="h-48 bg-gradient-to-br from-blue-100 to-amber-100 flex items-center justify-center relative">
