@@ -148,7 +148,7 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">WhatsApp</div>
-                  <div className="text-blue-200 text-sm">{companyInfo.contact.whatsapp}</div>
+                  <div className="text-blue-200 text-sm">{companyInfo?.contact?.whatsapp || '+90 554 234 44 00'}</div>
                   <button 
                     onClick={handleWhatsAppClick}
                     className="text-green-400 hover:text-green-300 text-sm flex items-center space-x-1 mt-1"
@@ -163,7 +163,7 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">E-posta</div>
-                  <div className="text-blue-200 text-sm">{companyInfo.contact.email}</div>
+                  <div className="text-blue-200 text-sm">{companyInfo?.contact?.email || 'info@goldencitizen.com.tr'}</div>
                 </div>
               </div>
 
@@ -171,7 +171,7 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-red-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">Lokasyon</div>
-                  <div className="text-blue-200 text-sm">{companyInfo.contact.address}</div>
+                  <div className="text-blue-200 text-sm">{companyInfo?.contact?.address || 'İzmir, Türkiye'}</div>
                 </div>
               </div>
 
@@ -179,7 +179,7 @@ const Footer = () => {
                 <Clock className="w-5 h-5 text-amber-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">Çalışma Saatleri</div>
-                  <div className="text-blue-200 text-sm">{companyInfo.contact.officeHours}</div>
+                  <div className="text-blue-200 text-sm">{companyInfo?.contact?.officeHours || 'Pazartesi - Cuma: 09:00 - 18:00'}</div>
                   <div className="text-green-400 text-xs">WhatsApp 7/24</div>
                 </div>
               </div>
