@@ -19,6 +19,24 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [companyInfo, setCompanyInfo] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  // Fetch company info from API
+  useEffect(() => {
+    const fetchCompanyInfo = async () => {
+      try {
+        const response = await axios.get(`${API}/company-info`);
+        setCompanyInfo(response.data);
+      } catch (err) {
+        console.error('Error fetching company info:', err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCompanyInfo();
+  }, []);
 
   const handleInputChange = (e) => {
     setFormData({
