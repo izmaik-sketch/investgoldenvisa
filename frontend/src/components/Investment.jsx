@@ -82,8 +82,35 @@ const Investment = () => {
         </div>
 
         {/* Properties Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {properties.map((property) => (
+        {loading ? (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {[1, 2, 3, 4, 5, 6].map((i) => (
+              <Card key={i} className="overflow-hidden border-0 shadow-lg">
+                <div className="h-48 bg-gray-200 animate-pulse"></div>
+                <CardContent className="p-6 space-y-4">
+                  <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
+                  <div className="h-3 bg-gray-200 rounded animate-pulse w-3/4"></div>
+                  <div className="flex gap-2">
+                    <div className="h-6 bg-gray-200 rounded animate-pulse w-16"></div>
+                    <div className="h-6 bg-gray-200 rounded animate-pulse w-16"></div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        ) : error ? (
+          <div className="text-center py-12">
+            <div className="text-red-600 mb-4">❌ {error}</div>
+            <Button 
+              onClick={() => window.location.reload()}
+              className="bg-blue-600 hover:bg-blue-700 text-white"
+            >
+              Yeniden Dene
+            </Button>
+          </div>
+        ) : (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {properties.map((property) => (
             <Card key={property.id} className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border-0 shadow-lg">
               <div className="relative">
                 {/* Image Placeholder */}
