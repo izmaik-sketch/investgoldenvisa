@@ -11,6 +11,28 @@ const API = `${BACKEND_URL}/api`;
 const Investment = () => {
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [favorites, setFavorites] = useState([]);
+  const [properties, setProperties] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Fetch properties from API
+  useEffect(() => {
+    const fetchProperties = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(`${API}/properties`);
+        setProperties(response.data);
+        setError(null);
+      } catch (err) {
+        console.error('Error fetching properties:', err);
+        setError('Emlak bilgileri yüklenirken bir hata oluştu.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProperties();
+  }, []);
 
   const toggleFavorite = (propertyId) => {
     setFavorites(prev => 
