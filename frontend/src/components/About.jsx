@@ -32,7 +32,11 @@ const About = () => {
     fetchCompanyInfo();
   }, []);
 
-const About = () => {
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent("Merhaba, Ali İrfan Kaynak ile Golden Visa danışmanlığı hakkında konuşmak istiyorum.");
+    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
+  };
+
   if (loading) {
     return (
       <section id="about" className="py-20 bg-white">
@@ -81,11 +85,6 @@ const About = () => {
   if (!companyInfo) {
     return null;
   }
-
-  const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Merhaba, Ali İrfan Kaynak ile Golden Visa danışmanlığı hakkında konuşmak istiyorum.");
-    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
-  };
 
   return (
     <section id="about" className="py-20 bg-white">
