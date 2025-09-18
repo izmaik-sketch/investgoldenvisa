@@ -82,6 +82,11 @@ const About = () => {
     return null;
   }
 
+  const handleWhatsAppClick = () => {
+    const message = encodeURIComponent("Merhaba, Ali İrfan Kaynak ile Golden Visa danışmanlığı hakkında konuşmak istiyorum.");
+    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
+  };
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
