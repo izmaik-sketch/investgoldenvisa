@@ -273,7 +273,7 @@ const Investment = () => {
           </div>
         </div>
 
-        {/* Property Detail Modal would go here if selectedProperty is set */}
+        {/* Property Detail Modal */}
         {selectedProperty && (
           <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
             <div className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
