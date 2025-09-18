@@ -1,9 +1,36 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Award, Users, CheckCircle, Phone, MapPin, Clock } from 'lucide-react';
-import { companyInfo } from '../mock/mockData';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
+
+const About = () => {
+  const [companyInfo, setCompanyInfo] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Fetch company info from API
+  useEffect(() => {
+    const fetchCompanyInfo = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(`${API}/company-info`);
+        setCompanyInfo(response.data);
+        setError(null);
+      } catch (err) {
+        console.error('Error fetching company info:', err);
+        setError('Şirket bilgileri yüklenirken bir hata oluştu.');
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchCompanyInfo();
+  }, []);
 
 const About = () => {
   const handleWhatsAppClick = () => {
