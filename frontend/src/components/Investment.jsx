@@ -212,7 +212,7 @@ const Investment = () => {
               </div>
             </Card>
           ))}
-        </div>
+          </div>
         )}
         </div>
 
