@@ -116,6 +116,9 @@ backend:
       - working: true
         agent: "main"
         comment: "Implemented GET /api/properties, GET /api/properties/:id, POST /api/properties endpoints. Database seeded with 6 properties. Successfully tested with curl."
+      - working: true
+        agent: "testing"
+        comment: "Comprehensive testing completed. GET /api/properties returns 6 properties with proper Turkish content and structure validation. GET /api/properties/:id works correctly with valid IDs and returns proper 400/404 errors for invalid/non-existent IDs. All property fields (title, location, price, type, size, bedrooms, bathrooms, features, description) are present and properly formatted. Turkish characters detected in property content."
   
   - task: "Contact Form API"
     implemented: true
