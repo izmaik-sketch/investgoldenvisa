@@ -132,7 +132,7 @@ const Investment = () => {
                     className="absolute top-3 right-3 p-2 bg-white/90 rounded-full hover:bg-white transition-colors"
                   >
                     <Heart 
-                      className={`w-4 h-4 ${favorites.includes(property.id) ? 'fill-red-500 text-red-500' : 'text-gray-600'}`} 
+                      className={`w-4 h-4 ${favorites.includes(property.id || property._id) ? 'fill-red-500 text-red-500' : 'text-gray-600'}`} 
                     />
                   </button>
 
