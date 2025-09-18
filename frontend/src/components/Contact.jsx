@@ -49,18 +49,25 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Mock form submission
-    setTimeout(() => {
-      alert('Mesajınız alındı! En kısa sürede size geri dönüş yapacağız.');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: 'Golden Visa Danışmanlığı',
-        message: ''
-      });
+    try {
+      const response = await axios.post(`${API}/contact`, formData);
+      
+      if (response.data.success) {
+        alert(response.data.message || 'Mesajınız alındı! En kısa sürede size geri dönüş yapacağız.');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: 'Golden Visa Danışmanlığı',
+          message: ''
+        });
+      }
+    } catch (error) {
+      console.error('Error submitting contact form:', error);
+      alert('Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyin veya WhatsApp ile iletişime geçin.');
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const handleWhatsAppClick = () => {
