@@ -33,10 +33,54 @@ const About = () => {
   }, []);
 
 const About = () => {
-  const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Merhaba, Ali İrfan Kaynak ile Golden Visa danışmanlığı hakkında konuşmak istiyorum.");
-    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
-  };
+  if (loading) {
+    return (
+      <section id="about" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <div className="h-8 bg-gray-200 rounded animate-pulse mx-auto w-64 mb-4"></div>
+            <div className="h-12 bg-gray-200 rounded animate-pulse mx-auto w-96 mb-4"></div>
+            <div className="h-6 bg-gray-200 rounded animate-pulse mx-auto w-full max-w-3xl"></div>
+          </div>
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div className="space-y-6">
+              <div className="h-64 bg-gray-200 rounded animate-pulse"></div>
+              <div className="h-32 bg-gray-200 rounded animate-pulse"></div>
+            </div>
+            <div className="space-y-8">
+              <div className="grid grid-cols-2 gap-6">
+                {[1,2,3,4].map(i => (
+                  <div key={i} className="h-24 bg-gray-200 rounded animate-pulse"></div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section id="about" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center py-12">
+            <div className="text-red-600 mb-4">❌ {error}</div>
+            <Button 
+              onClick={() => window.location.reload()}
+              className="bg-blue-600 hover:bg-blue-700 text-white"
+            >
+              Yeniden Dene
+            </Button>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
+  if (!companyInfo) {
+    return null;
+  }
 
   return (
     <section id="about" className="py-20 bg-white">
