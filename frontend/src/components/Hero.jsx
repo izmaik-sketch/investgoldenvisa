@@ -74,8 +74,8 @@ const Hero = () => {
             {/* Trust Indicators */}
             <div className="flex items-center space-x-6 pt-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-900">50+</div>
-                <div className="text-sm text-gray-600">Başarılı Müşteri</div>
+                <div className="text-2xl font-bold text-blue-900">%100</div>
+                <div className="text-sm text-gray-600">Müşteri Talebi</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-blue-900">100%</div>
