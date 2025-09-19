@@ -23,13 +23,13 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-900 to-amber-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">GC</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-blue-900">Golden Citizen</h1>
-              <p className="text-xs text-gray-600">Yunanistan Golden Visa</p>
+          <div className="flex items-center">
+            <div className="h-12 w-auto">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/1wum8yh0_logo%20son.jpeg"
+                alt="Golden Citizen - Residency & Citizenship Solutions"
+                className="h-full w-auto object-contain"
+              />
             </div>
           </div>
 
