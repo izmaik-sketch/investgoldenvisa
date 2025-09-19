@@ -148,7 +148,7 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-green-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <div className="text-white font-medium">WhatsApp</div>
-                  <div className="text-blue-200 text-sm">{companyInfo?.contact?.whatsapp || '+90 554 234 44 00'}</div>
+                  <div className="text-blue-200 text-sm">{companyInfo?.contact?.whatsapp || '+90 533 285 30 31'}</div>
                   <button 
                     onClick={handleWhatsAppClick}
                     className="text-green-400 hover:text-green-300 text-sm flex items-center space-x-1 mt-1"
