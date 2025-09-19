@@ -200,7 +200,7 @@ const About = () => {
               <Card className="text-center p-6 border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-0">
                   <div className="text-3xl font-bold text-blue-900 mb-2">
-                    {companyInfo.stats.successfulApplications}+
+                    %100
                   </div>
                   <div className="text-gray-600">Başarılı Müşteri</div>
                   <div className="text-sm text-blue-600 mt-1">Başarılı Golden Visa başvurularına devam etmekteyiz</div>
