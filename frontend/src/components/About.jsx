@@ -34,7 +34,7 @@ const About = () => {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Merhaba, Ali İrfan Kaynak ile Golden Visa danışmanlığı hakkında konuşmak istiyorum.");
-    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
+    window.open(`https://wa.me/905332853031?text=${message}`, '_blank');
   };
 
   if (loading) {
