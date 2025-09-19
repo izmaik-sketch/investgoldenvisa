@@ -88,21 +88,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Image Placeholder */}
+          {/* Hero Image */}
           <div className="relative">
-            <div className="bg-gradient-to-br from-blue-100 to-amber-100 rounded-2xl p-8 h-96 lg:h-[500px] flex items-center justify-center border-2 border-dashed border-blue-300">
-              <div className="text-center space-y-4">
-                <div className="w-16 h-16 bg-blue-200 rounded-full flex items-center justify-center mx-auto">
-                  <MapPin className="w-8 h-8 text-blue-600" />
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-lg font-semibold text-blue-900">Mediterranean Lifestyle Image</h3>
-                  <p className="text-sm text-gray-600">Greek islands, family lifestyle, or Athens cityscape</p>
-                  <p className="text-xs text-blue-700 bg-blue-50 px-3 py-1 rounded-full inline-block">
-                    Image Placeholder - To be replaced
-                  </p>
-                </div>
-              </div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/hb6zkecc_gorsel%201.png"
+                alt="Golden Citizen - Yunanistan Golden Visa Danışmanlığı"
+                className="w-full h-96 lg:h-[500px] object-cover"
+              />
             </div>
             
             {/* Floating Elements */}
