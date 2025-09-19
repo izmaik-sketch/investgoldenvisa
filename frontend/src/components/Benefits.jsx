@@ -103,7 +103,7 @@ const Benefits = () => {
             <button 
               onClick={() => {
                 const message = encodeURIComponent("Merhaba, Yunanistan Golden Visa avantajları hakkında detaylı bilgi almak istiyorum.");
-                window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
+                window.open(`https://wa.me/905332853031?text=${message}`, '_blank');
               }}
               className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-xl font-semibold transition-all hover:scale-105 inline-flex items-center space-x-2"
             >
