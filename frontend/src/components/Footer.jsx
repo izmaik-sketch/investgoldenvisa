@@ -59,7 +59,7 @@ const Footer = () => {
             <div className="flex items-center space-x-4 pt-4">
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">%100</div>
-                <div className="text-xs text-blue-200">Başarılı Müşteri</div>
+                <div className="text-xs text-blue-200">Müşteri Talebi</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">100%</div>
