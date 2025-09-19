@@ -55,7 +55,7 @@ const Investment = () => {
     const message = encodeURIComponent(
       `Merhaba, ${property.title} (${formatPrice(property.price)}) hakkında detaylı bilgi almak istiyorum.`
     );
-    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
+    window.open(`https://wa.me/905332853031?text=${message}`, '_blank');
   };
 
   return (
