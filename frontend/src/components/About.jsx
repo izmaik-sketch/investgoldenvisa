@@ -203,7 +203,7 @@ const About = () => {
                     {companyInfo.stats.successfulApplications}+
                   </div>
                   <div className="text-gray-600">Başarılı Müşteri</div>
-                  <div className="text-sm text-blue-600 mt-1">Golden Visa alındı</div>
+                  <div className="text-sm text-blue-600 mt-1">Başarılı Golden Visa başvurularına devam etmekteyiz</div>
                 </CardContent>
               </Card>
 
