@@ -25,7 +25,7 @@ const Footer = () => {
 
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Merhaba, Yunanistan Golden Visa hakkında bilgi almak istiyorum.");
-    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
+    window.open(`https://wa.me/905332853031?text=${message}`, '_blank');
   };
 
   const scrollToSection = (sectionId) => {
