@@ -138,7 +138,7 @@ async def seed_company_info():
             ]
         },
         "contact": {
-            "whatsapp": "+90 554 234 44 00",
+            "whatsapp": "+90 533 285 30 31",
             "email": "info@goldencitizen.com.tr",
             "address": "İzmir, Türkiye",
             "officeHours": "Pazartesi - Cuma: 09:00 - 18:00"
