@@ -117,9 +117,13 @@ const About = () => {
               <CardContent className="p-0">
                 <div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white p-8">
                   <div className="flex items-center space-x-4 mb-4">
-                    {/* Avatar Placeholder */}
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
-                      <Users className="w-8 h-8 text-white" />
+                    {/* Professional Image */}
+                    <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white/30">
+                      <img 
+                        src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/hb6zkecc_gorsel%201.png"
+                        alt="Ali İrfan Kaynak - Golden Citizen Founder"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold">{companyInfo.founder.name}</h3>
