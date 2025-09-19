@@ -118,13 +118,13 @@ const Investment = () => {
                   <img 
                     src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/hb6zkecc_gorsel%201.png"
                     alt={`${property.title} - ${property.location}`}
-                    className="w-full h-full object-cover opacity-75"
+                    className="w-full h-full object-contain bg-white"
                   />
-                  <div className="absolute inset-0 bg-blue-900/20"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center space-y-2 bg-white/90 p-4 rounded-lg">
-                      <Home className="w-8 h-8 text-blue-600 mx-auto" />
-                      <p className="text-sm text-blue-700 font-medium">{property.location}</p>
+                  <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="text-center space-y-1 bg-white/95 p-3 rounded-lg shadow-lg">
+                      <Home className="w-6 h-6 text-blue-600 mx-auto" />
+                      <p className="text-sm text-blue-900 font-semibold">{property.location}</p>
                       <p className="text-xs text-gray-600">{property.type}</p>
                     </div>
                   </div>
