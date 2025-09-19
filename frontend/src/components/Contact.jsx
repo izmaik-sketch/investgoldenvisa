@@ -74,12 +74,12 @@ const Contact = () => {
     const message = encodeURIComponent(
       `Merhaba Golden Citizen,\n\nAdım: ${formData.name || '[İsim]'}\nTelefon: ${formData.phone || '[Telefon]'}\n\nYunanistan Golden Visa hakkında bilgi almak istiyorum.`
     );
-    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
+    window.open(`https://wa.me/905332853031?text=${message}`, '_blank');
   };
 
   const quickWhatsApp = () => {
     const message = encodeURIComponent("Merhaba, Yunanistan Golden Visa hakkında bilgi almak istiyorum.");
-    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
+    window.open(`https://wa.me/905332853031?text=${message}`, '_blank');
   };
 
   return (
