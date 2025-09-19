@@ -5,7 +5,7 @@ import { ArrowRight, MapPin, Euro, Clock } from 'lucide-react';
 const Hero = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Merhaba, Yunanistan Golden Visa hakkında ücretsiz danışmanlık almak istiyorum.");
-    window.open(`https://wa.me/905542344400?text=${message}`, '_blank');
+    window.open(`https://wa.me/905332853031?text=${message}`, '_blank');
   };
 
   return (
