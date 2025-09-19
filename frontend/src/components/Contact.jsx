@@ -251,7 +251,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-blue-900">WhatsApp & Telefon</h4>
-                      <p className="text-gray-600">{companyInfo?.contact?.whatsapp || '+90 554 234 44 00'}</p>
+                      <p className="text-gray-600">{companyInfo?.contact?.whatsapp || '+90 533 285 30 31'}</p>
                       <p className="text-sm text-green-600">7/24 WhatsApp desteği</p>
                     </div>
                   </div>
