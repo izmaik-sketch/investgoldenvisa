@@ -113,12 +113,20 @@ const Investment = () => {
             {properties.map((property) => (
               <Card key={property.id || property._id} className="group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border-0 shadow-lg">
               <div className="relative">
-                {/* Image Placeholder */}
-                <div className="h-48 bg-gradient-to-br from-blue-100 to-amber-100 flex items-center justify-center relative">
-                  <div className="text-center space-y-2">
-                    <Home className="w-8 h-8 text-blue-600 mx-auto" />
-                    <p className="text-sm text-blue-700 font-medium">{property.location}</p>
-                    <p className="text-xs text-gray-500">Property Image Placeholder</p>
+                {/* Property Image */}
+                <div className="h-48 bg-gradient-to-br from-blue-100 to-amber-100 flex items-center justify-center relative overflow-hidden">
+                  <img 
+                    src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/hb6zkecc_gorsel%201.png"
+                    alt={`${property.title} - ${property.location}`}
+                    className="w-full h-full object-cover opacity-75"
+                  />
+                  <div className="absolute inset-0 bg-blue-900/20"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center space-y-2 bg-white/90 p-4 rounded-lg">
+                      <Home className="w-8 h-8 text-blue-600 mx-auto" />
+                      <p className="text-sm text-blue-700 font-medium">{property.location}</p>
+                      <p className="text-xs text-gray-600">{property.type}</p>
+                    </div>
                   </div>
                   
                   {/* Property Type Badge */}
