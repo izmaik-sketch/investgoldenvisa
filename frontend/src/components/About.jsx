@@ -202,7 +202,7 @@ const About = () => {
                   <div className="text-3xl font-bold text-blue-900 mb-2">
                     %100
                   </div>
-                  <div className="text-gray-600">Başarılı Müşteri</div>
+                  <div className="text-gray-600">Müşteri Talebi</div>
                   <div className="text-sm text-blue-600 mt-1">Başarılı Golden Visa başvurularına devam etmekteyiz</div>
                 </CardContent>
               </Card>
