@@ -127,11 +127,11 @@ async def seed_company_info():
         "founder": {
             "name": "Ali İrfan Kaynak",
             "title": "Kurucu & Golden Visa Uzmanı",
-            "experience": "5+ yıl Yunanistan Golden Visa deneyimi",
+            "experience": "5+ Yıl Gayrimenkul Sektörü deneyimi",
             "credentials": "Gayrimenkul Yatırım Danışmanı, AB Göçmenlik Uzmanı",
-            "description": "İzmir merkezli boutique danışmanlık firması Golden Citizen'in kurucusu Ali İrfan Kaynak, 5 yılı aşkın süredir Türk yatırımcılara Yunanistan Golden Visa sürecinde rehberlik etmektedir.",
+            "description": "İzmir merkezli boutique gayrimenkul danışmanlık firması Golden Citizen'in kurucusu Ali İrfan Kaynak, 5 yılı aşkın süredir Gayrimenkul Sektöründedir ve ayrıca Türk yatırımcılara Yunanistan Golden Visa sürecinde rehberlik etmektedir.",
             "achievements": [
-                "50+ başarılı Golden Visa başvurusu",
+                "Başarılı Golden Visa Başvuruları",
                 "100% başarı oranı",
                 "İzmir'in en güvenilir Golden Visa uzmanı",
                 "Şeffaf ve dürüst danışmanlık yaklaşımı"
