@@ -24,7 +24,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="h-12 w-auto">
+            <div className="h-14 w-auto">
               <img 
                 src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/1wum8yh0_logo%20son.jpeg"
                 alt="Golden Citizen - Residency & Citizenship Solutions"
