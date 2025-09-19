@@ -42,12 +42,12 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-amber-400 to-red-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">GC</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">Golden Citizen</h3>
-                <p className="text-blue-200 text-sm">Yunanistan Golden Visa</p>
+              <div className="h-12 w-auto">
+                <img 
+                  src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/qzpcuakc_logo%20son.jpeg"
+                  alt="Golden Citizen - Residency & Citizenship Solutions"
+                  className="h-full w-auto object-contain"
+                />
               </div>
             </div>
             
