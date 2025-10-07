@@ -23,8 +23,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo and Company Name */}
-          <div className="flex items-center space-x-3">
-            <div className="h-14 w-auto">
+          <div className="flex items-center space-x-4">
+            <div className="h-16 w-auto">
               <img 
                 src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/1wum8yh0_logo%20son.jpeg"
                 alt="Golden Citizen - Residency & Citizenship Solutions"
@@ -32,8 +32,9 @@ const Header = () => {
               />
             </div>
             <div className="hidden md:block">
-              <h1 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-600">
-                Golden Citizen Oturum İzni ve Vatandaşlık Çözümleri
+              <h1 className="text-lg font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-red-600 leading-tight">
+                <div>Golden Citizen Oturum İzni &</div>
+                <div>Vatandaşlık Çözümleri</div>
               </h1>
             </div>
           </div>
