@@ -115,11 +115,19 @@ const Investment = () => {
               <div className="relative">
                 {/* Property Image */}
                 <div className="h-48 bg-gradient-to-br from-blue-100 to-amber-100 flex items-center justify-center relative overflow-hidden">
-                  <img 
-                    src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/hb6zkecc_gorsel%201.png"
-                    alt={`${property.title} - ${property.location}`}
-                    className="w-full h-full object-contain bg-white"
-                  />
+                  {property.title === "Atina Merkez Luxury Daire" ? (
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/risrobbk_Atinada%20ymodernn%20daire.jpg"
+                      alt={`${property.title} - ${property.location}`}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/hb6zkecc_gorsel%201.png"
+                      alt={`${property.title} - ${property.location}`}
+                      className="w-full h-full object-contain bg-white"
+                    />
+                  )}
                   <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="text-center space-y-1 bg-white/95 p-3 rounded-lg shadow-lg">
