@@ -133,6 +133,12 @@ const Investment = () => {
                       alt={`${property.title} - ${property.location}`}
                       className="w-full h-full object-cover"
                     />
+                  ) : property.title === "Mykonos Beach House" ? (
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/b8fb6tzh_mykonos%20beach%20.jpg"
+                      alt={`${property.title} - ${property.location}`}
+                      className="w-full h-full object-cover"
+                    />
                   ) : (
                     <img 
                       src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/hb6zkecc_gorsel%201.png"
