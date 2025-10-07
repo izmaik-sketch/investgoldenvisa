@@ -118,11 +118,11 @@ const About = () => {
                 <div className="bg-gradient-to-br from-blue-900 to-blue-700 text-white p-8">
                   <div className="flex items-center space-x-4 mb-4">
                     {/* Professional Image */}
-                    <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white/30 bg-white p-1">
+                    <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-white/30">
                       <img 
-                        src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/hb6zkecc_gorsel%201.png"
+                        src="https://customer-assets.emergentagent.com/job_4bc69a22-5958-4fd2-8ab8-e3ba9bf81887/artifacts/zurtessl_aik%20logolu.png"
                         alt="Ali İrfan Kaynak - Golden Citizen Founder"
-                        className="w-full h-full object-contain rounded-full"
+                        className="w-full h-full object-cover"
                       />
                     </div>
                     <div>
